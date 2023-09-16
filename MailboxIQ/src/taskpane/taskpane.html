@@ -1,0 +1,182 @@
+<!-- Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT License. -->
+<!-- This file shows how to design a first-run page that provides a welcome screen to the user about the features of the add-in. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DB Assistant Task Pane Add-in</title>
+
+    <!-- Office JavaScript API -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+
+    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/. -->
+    <link rel="stylesheet" href="https://static2.sharepointonline.com/files/fabric/office-ui-fabric-core/11.0.0/css/fabric.min.css"/>
+
+    <!-- Template styles -->
+    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="ms-font-m ms-welcome ms-Fabric">
+    <!--header class="ms-welcome__header ms-bgColor-neutralLighter">
+        <img width="90" height="90" src="../../assets/logo-filled.png" alt="DB" title="DB" />
+        <h1 class="ms-font-su">Welcome</h1>
+    </header-->
+    <section id="sideload-msg" class="ms-welcome__main">
+        <h2 class="ms-font-xl">Please <a target="_blank" href="https://learn.microsoft.com/office/dev/add-ins/testing/test-debug-office-add-ins#sideload-an-office-add-in-for-testing">sideload</a> your add-in to see app body.</h2>
+    </section>
+    <main id="app-body" class="ms-welcome__main" style="display: none;">
+		<!-- <h2 class="ms-font-l">Discover what AI can do for your communication! </h2> -->
+		<img width="50%" height="50%" src="../../assets/logo.png" alt="Logo" title="Logo" />
+		<div><br/></div>
+		<table id="config_table">
+			<tr >
+				<td width="30%">
+					GCP Project ID:
+				</td>
+				<td width="70%">
+					<input id="project_id_config_input" value="sunny-lightning-392907" size="30"></input>
+				</td>
+			</tr>
+			<tr >
+				<td>
+					GCP Location:
+				</td>
+				<td>
+					<input id="location_config_input" value="us-central1" size="30"></input>
+				</td>
+			</tr>
+			<tr >
+				<td>
+					Token (gcloud auth print-access-token):
+				</td>
+				<td>
+					<textarea id="token_config_input" value="" cols="30" rows = "10"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button role="button" id="save_config_button" class="ms-font-s" >
+						<span class="ms-Button-label">Save</span>
+					</button>					
+				</td>
+			</tr>
+		
+		</table>
+		<table id="main_table" style = "display:none">
+		<!--tr><td></td><td></td></tr-->
+			<tr>
+				<td>
+					<h4 class="cell-header">Email Sentiment</h4>
+					<span id="sentiment_no_info" class="no-info">-</span>
+					<img width="90" height="90" src="../../assets/smiley-angry.png" id="sentiment_negative" style = "display:none" alt="Negative" title="Negative" />
+					<img width="90" height="90" src="../../assets/smiley-happy.png" id="sentiment_positive" style = "display:none"  alt="Positive" title="Positive" />
+				</td>
+				<td>
+					<h4 class="cell-header">Email Tone</h4>
+					<span id="tone_no_info" class="no-info">-</span>
+					<img width="90" height="90" src="../../assets/thumbs-up.png" id="tone_thumbs_up"  style = "display:none" alt="OK" title="OK" />
+					<img width="90" height="90" src="../../assets/thumbs-down.png" id="tone_thumbs_down" style = "display:none" alt="negative" title="negative" />
+				</td>
+			</tr>
+			<tr class="no-bottom-border">
+				<td colspan="2">
+					<button role="button" id="run" class="ms-font-s" title="Check Email Language (entire email or selection)">
+						<span class="ms-Button-label">Check</span>
+					</button>
+					<!-- <div role="button" id="run" class="ms-Button ms-Button--hero ms-font-l"> -->
+						<!-- <span class="ms-Button-label"  style="color:white;text-decoration: underline;"><b>Check</b></span> -->
+					<!-- </div> -->
+				</td>
+			</tr>
+			<tr class="no-bottom-border">
+				<td colspan="2">
+					<div>&nbsp;</div>
+				</td>
+			</tr>
+			<tr class="no-bottom-border">
+				<td><h4 class="cell-header">Generate</h4></td><td><h4 class="cell-header">Classification</h4></td>
+			</tr>
+			<tr >
+				<td>
+					<table>
+						<tr><td>
+							<button role="button" id="genereate_summary" class="ms-font-s" title="Summarize (entire email or selection)">
+								<span class="ms-Button-label">Summarize</span>
+							</button>
+						</td></tr>
+						<tr><td>
+							<button role="button" id="rephrase" class="ms-font-s"  title="Rephrase in polite and positive manner (entire email or selection)">
+								<span class="ms-Button-label">Rephrase</span>
+							</button>
+						</td></tr>
+					</table>
+					<div>&nbsp;</div>
+					
+				</td>
+				<td>
+					<table>
+						<tr><td>
+							<button role="button" id="severity_classification" class="ms-font-s">
+								<span class="ms-Button-label">Severity detection</span>
+							</button>
+						</td></tr>
+						<tr><td>
+							<button role="button" id="fraud_classification" class="ms-font-s">
+								<span class="ms-Button-label">Fraud detection</span>
+							</button>
+						</td></tr>
+					</table>
+					<!-- <button role="button" id="other_classification" class="ms-Button ms-Button--hero ms-font-m">
+						<span class="ms-Button-label">Other</span>
+					</button> -->
+					<div>&nbsp;</div>
+				</td>
+			</tr>
+			
+			<tr class="no-bottom-border" style = "border-top: 1px solid white;">
+				<td><h4 class="cell-header">Translate</h4></td><td><h4 class="cell-header">Generative AI</h4></td>
+			</tr>
+			<tr >
+				<td>
+					<button role="button" id="en_de_translation" class="ms-font-s" title="Translate (based on entire email or selection) - blocked by Google">
+						<span class="ms-Button-label">EN<->DE</span>
+					</button>
+					<!-- <button role="button" id="de_en_translation" class="ms-font-s">
+						<span class="ms-Button-label">DE->EN</span>
+					</button> -->
+					
+				</td>
+				<td>
+				<input id="prompt_input"></input>
+				<button role="button" id="prompt_button" class="ms-font-s" title="Prompt generative AI (based on entire email or selection)">
+					<span class="ms-Button-label">Prompt</span>
+				</button>
+					
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<button role="button" id="open_config" class="ms-font-s" title="Config">
+					<span class="ms-Button-label">Config</span>
+				</button>
+				
+				</td>
+			</tr>
+		</table>
+		
+		<p>
+			<label id="debug"></label>
+		
+			
+		</p> 
+		<!-- <div role="button" id="run" class="ms-Button ms-Button--hero ms-font-xl">
+			<span class="ms-Button-label" ><b><a href="" style="color:white">REFRESH</a></b></span>
+		</div>  -->
+	</main>
+</body>
+
+</html>

@@ -1,2 +1,206 @@
 space
 listening thread is started
+space
+listening thread is started
+space
+listening thread is started
+space
+listening thread is started
+space
+listening thread is started
+space
+listening thread is started
+space
+listening thread is started
+space
+listening thread is started
+space
+listening thread is started
+space
+listening thread is started
+space
+listening thread is started
+space
+listening thread is started
+space
+listening thread is started
+space
+listening thread is started
+speak
+space
+listening thread is started
+speak
+User input: hello
+space
+listening thread is started
+speak
+space
+listening thread is started
+speak
+User input: hi can you tell me about male Boxer q
+User input: Google can you tell me about male Boxer q
+space 
+listening thread is started 
+speak 
+User input: hello 
+scores: space 
+listening thread is started 
+speak 
+User input: hello 
+scores: 0.33313978 26 
+Model response: , what is this application? Our application is an outlook plugin which helps users to analyze and write their emails more efficiently. 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: play can you tell me about your team 
+scores: 0.8599814 25 
+use predefined question:  Can you please tell me about your team? 
+audio end 
+audio end 
+space 
+listening thread is started 
+speak 
+space 
+listening thread is started 
+speak 
+space 
+listening thread is started 
+speak 
+space 
+listening thread is started 
+speak 
+User input: hello can you tell me about location 
+scores: 0.24224089 25 
+Model response: Our application is an outlook plugin which can be used on any device with outlook. 
+audio end 
+User input: location 
+scores: 0.33943838 26 
+Model response: Our application is an outlook plugin which can be used on any device with outlook. 
+space 
+listening thread is started 
+speak 
+User input: hello what's the weather in Frankfurt 
+scores: 0.13881335 26 
+Model response: The weather in Frankfurt is currently 15 degrees Celsius with sunny skies. 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: what's the capital of Germany 
+scores: 0.08203731 26 
+Model response: Our application is an outlook plugin which helps users to analyze and write their emails more efficiently. It has the following functions:
+1. It can show a sentiment of email, i.e. negative or positive. This will help users to avoid sending negative emails and try to write more positive emails
+2. It can 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: hello can you tell me about your application please 
+scores: 0.40754306 19 
+Model response: Our application is an outlook plugin which helps users to analyze and write their emails more efficiently. It has the following functions:
+1. It can show a sentiment of email, i.e. negative or positive. This will help users to avoid sending negative emails and try to write more positive emails
+2. It can 
+space 
+listening thread is started 
+speak 
+User input: can you tell me about your application please what is it about 
+scores: 0.42306882 17 
+Model response: Our application is an outlook plugin which helps users to analyze and write their emails more efficiently. 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: hello can you tell me about the application 
+scores: 0.52830684 17 
+use predefined question:  Can you explain the technology behind the MailboxIQ App in simple terms? 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: what is the weather in Frankfurt 
+scores: 0.055059135 26 
+Model response: I'm not sure about the weather in Frankfurt. Our application doesn't have a weather feature. 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: what is 1 + 1 
+scores: 0.14684695 1 
+Model response: Our application is an outlook plugin which helps users to analyze and write their emails more efficiently. 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: can you solve a simple equation 1 + 1 
+scores: 0.13149148 8 
+Model response: Our application is an outlook plugin which helps users to analyze and write their emails more efficiently. It has the following functions:
+1. It can show a sentiment of email, i.e. negative or positive. This will help users to avoid sending negative emails and try to write more positive emails
+2. It can 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: can you tell me more about your application please 
+scores: 0.35359985 10 
+Model response: Our application is an outlook plugin which helps users to analyze and write their emails more efficiently. It has the following functions:
+1. It can show a sentiment of email, i.e. negative or positive. This will help users to avoid sending negative emails and try to write more positive emails
+2. It can 
+space 
+listening thread is started 
+speak 
+User input: turn it down to 40% 
+scores: 0.22517443 26 
+Model response: Sure, you can turn down the sensitivity of the sentiment analysis to 40%. This means that the application will be less likely to flag emails as negative. 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: can you tell me about male Boxer q 
+scores: 0.17378682 25 
+Model response: Our application is an outlook plugin which helps users to analyze and write their emails more efficiently. It has the following functions: 1. It can show a sentiment of email, i.e. negative or positive. This will help users to avoid sending negative emails and try to write more positive emails. 2. It 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: hello can you tell me about mailbox thank you 
+scores: 0.72474694 9 
+use predefined question:  What is MailboxIQ and what does it do? 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: can you tell me about Mel B i q 
+scores: 0.2252142 20 
+Model response: Mel B is an outlook plugin which helps users to analyze and write their emails more efficiently. It has the following functions: 1. It can show a sentiment of email, i.e. negative or positive. This will help users to avoid sending negative emails and try to write more positive emails. 2. It 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: can you tell me about your please 
+scores: 0.4300782 25 
+Model response: Our application is an outlook plugin which helps users to analyze and write their emails more efficiently. It has the following functions:
+1. It can show a sentiment of email, i.e. negative or positive. This will help users to avoid sending negative emails and try to write more positive emails
+2. It can 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: can you tell me about your application please 
+scores: 0.37326604 10 
+Model response: Our application is an outlook plugin which helps users to analyze and write their emails more efficiently. It has the following functions: It can show a sentiment of email, i.e. negative or positive. It can provide a language tone of email. It can summarize long emails in a few sentences. It can rewrite an email 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: tell me about login please 
+scores: 0.30434287 19 
+Model response: You can login to our application using your Microsoft account. Once you login, you can start using our application to analyze and write your emails more efficiently. 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: can you tell me about your plugin please 
+scores: 0.36708522 14 
+Model response: Our plugin is an Outlook plugin that helps users to analyze and write their emails more efficiently. It can show a sentiment of email, i.e. negative or positive. It can also provide a language tone of email, this should help users to avoid impolite words and avoid using inappropriate language. 
+audio end 

@@ -341,3 +341,397 @@ scores: 0.8671248 1
 use predefined question:  What's your name? 
 Answers/0101_response_unicorn.mp3 
 Answers/0101_response_unicorn.mp4 
+space 
+listening thread is started 
+speak 
+User input: hi what's your name 
+scores: 0.76268893 2 
+use predefined question:  What is your name? 
+Answers/0101_response_unicorn.mp3 
+Answers/0101_response_unicorn.mp4 
+space 
+listening thread is started 
+speak 
+User input: can you tell me about mailbox IQ 
+scores: 0.66829664 19 
+use predefined question:  What is MailboxIQ and what does it do? 
+Answers/0201_response_unicorn.mp3 
+Answers/0201_response_unicorn.mp4 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: what's your name 
+scores: 0.8671248 1 
+use predefined question:  What's your name? 
+Answers/0101_response_unicorn.mp3 
+Answers/0101_response_unicorn.mp4 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: can your PlayStation translate emails 
+scores: 0.3448453 23 
+Model response: No, our application is an outlook plugin which helps users to analyze and write their emails more efficiently. It is not a PlayStation. 
+response_changed.mp3 
+assets/speaking.mp4 
+audio end 
+space 
+listening thread is started 
+speak 
+stopped 
+space 
+listening thread is started 
+speak 
+User input: can you play location to sit in mouth 
+scores: 0.19927587 14 
+Model response: No, our application is an outlook plugin which helps users to analyze and write their emails more efficiently. It cannot play location to sit in mouth. 
+response_changed.mp3 
+assets/speaking.mp4 
+stopped 
+space 
+listening thread is started 
+speak 
+User input: can you play kation translating Mouse 
+scores: 0.25838196 10 
+Model response: Mail is an Outlook plugin that helps users analyze and write their emails more efficiently. It can show a sentiment of email, i.e. negative or positive. It can provide a language tone of email, this should help users to avoid impolite words and avoid using inappropriate language. It can summarize long emails in a few 
+response_changed.mp3 
+assets/speaking.mp4 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: tell me about mailbox AQA 
+scores: 0.72455037 19 
+use predefined question:  What is MailboxIQ and what does it do? 
+Answers/0201_response_unicorn.mp3 
+Answers/0201_response_unicorn.mp4 
+stopped 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: what's your name 
+scores: 0.8671248 1 
+use predefined question:  What's your name? 
+Answers/0101_response_unicorn.mp3 
+Answers/0101_response_unicorn.mp4 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: how are you 
+scores: 0.88182294 18 
+use predefined question:  How are you? 
+Answers/0110_response_unicorn.mp3 
+Answers/0110_response_unicorn.mp4 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: what about you 
+scores: 0.3660351 16 
+Model response: I am an assistant that helps users understand more about our application. I can answer your questions about the application and help you get started using it. 
+response_changed.mp3 
+assets/speaking.mp4 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: how can I start using your application 
+scores: 0.5034443 30 
+use predefined question:  How can someone get started with using the MailboxIQ App? 
+Answers/0210_response_unicorn.mp3 
+Answers/0210_response_unicorn.mp4 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: what's your name 
+scores: 0.8671248 1 
+use predefined question:  What's your name? 
+Answers/0101_response_unicorn.mp3 
+Answers/0101_response_unicorn.mp4 
+audio end 
+stopped 
+audio end 
+audio end 
+audio end 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: can your application translate emails 
+scores: 0.42283356 22 
+Model response: Yes, our application can translate emails to other languages. 
+response_changed.mp3 
+assets/speaking.mp4 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: how are you 
+scores: 0.88182294 18 
+use predefined question:  How are you? 
+Answers/0110_response_unicorn.mp3 
+Answers/0110_response_unicorn.mp4 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: who are you 
+scores: 0.5535896 2 
+use predefined question:  What is your name? 
+Answers/0101_response_unicorn.mp3 
+Answers/0101_response_unicorn.mp4 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: can you tell me about your application 
+scores: 0.37701875 20 
+Model response: MailboxIQ is an AI-powered application that helps users to analyze and write their emails more efficiently. It has features such as email summaries, sentiment analysis, priority sorting, customizable filters, and language translation. 
+response_changed.mp3 
+assets/speaking.mp4 
+audio end 
+stopped 
+audio end 
+audio end 
+stopped 
+stopped 
+stopped 
+stopped 
+stopped 
+stopped 
+stopped 
+space 
+listening thread is started 
+speak 
+User input: hi what can you do 
+scores: 0.37849918 4 
+Model response: I am an AI-powered application that helps users to analyze and write their emails more efficiently. I can show the sentiment of an email, provide a language tone of email, summarize long emails, rewrite an email in more polite and positive language, and translate to other languages. 
+response_changed.mp3 
+assets/speaking.mp4 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: who are you 
+scores: 0.5535896 2 
+use predefined question:  What is your name? 
+Answers/0101_response_unicorn.mp3 
+Answers/0101_response_unicorn.mp4 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: hello 
+scores: 0.45531368 16 
+Model response: Hi there, how can I help you today? 
+response_changed.mp3 
+assets/speaking.mp4 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: hello 
+scores: 0.45531368 16 
+Model response: Hi there, how can I help you today? 
+response_changed.mp3 
+assets/speaking.mp4 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: what are you doing 
+scores: 0.64755017 17 
+use predefined question:  How are you doing? 
+Answers/0110_response_unicorn.mp3 
+Answers/0110_response_unicorn.mp4 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: can you say bye bye 
+scores: 0.3196659 14 
+Model response: Goodbye, have a nice day! 
+response_changed.mp3 
+assets/speaking.mp4 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: goodbye 
+scores: 0.32362568 16 
+Model response: Goodbye, have a nice day! 
+response_changed.mp3 
+assets/speaking.mp4 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: what are you doing here 
+scores: 0.54643476 17 
+use predefined question:  How are you doing? 
+Answers/0110_response_unicorn.mp3 
+Answers/0110_response_unicorn.mp4 
+audio end 
+stopped 
+stopped 
+stopped 
+stopped 
+space 
+listening thread is started 
+speak 
+User input: what's the weather in Frankfurt 
+scores: 0.15246086 18 
+Model response: The weather in Frankfurt today is cloudy with a high of 55 degrees Fahrenheit. There is a 20% chance of rain. 
+response_changed.mp3 
+assets/speaking.mp4 
+audio end 
+stopped 
+stopped 
+stopped 
+stopped 
+space 
+listening thread is started 
+speak 
+User input: what's the weather in Frankfurt 
+scores: 0.15246086 18 
+online, sending request 
+Model response: The weather in Frankfurt today is cloudy with a high of 55 degrees Fahrenheit. There is a 20% chance of rain. 
+response_changed.mp3 
+assets/speaking.mp4 
+audio end 
+stopped 
+stopped 
+stopped 
+stopped 
+stopped 
+space 
+listening thread is started 
+speak 
+User input: what's the weather in Brentwood 
+scores: 0.11682002 16 
+offline, default response 
+Answers/0401_response_unicorn.mp3 
+Answers/0401_response_unicorn.mp4 
+stopped 
+space 
+listening thread is started 
+speak 
+User input: what's the weather in Frankfurt 
+scores: 0.15246086 18 
+online, sending request 
+Model response: The weather in Frankfurt today is cloudy with a high of 55 degrees Fahrenheit. There is a 20% chance of rain. 
+response_changed.mp3 
+assets/speaking.mp4 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: what's the weather in Frankfurt 
+scores: 0.15246086 18 
+offline, default response 
+ 
+ 
+space 
+listening thread is started 
+speak 
+stopped 
+space 
+listening thread is started 
+speak 
+User input: what's the weather in Frankfurt 
+scores: 0.15246086 18 
+offline, default response 
+Answers/0401_response_unicorn.mp3 
+Answers/0401_response_unicorn.mp4 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: what's the weather in Thetford 
+scores: 0.11416648 16 
+online, sending request 
+Model response: The weather in Thetford today is expected to be cloudy with a high of 55 degrees Fahrenheit. There is a 20% chance of rain. 
+response_changed.mp3 
+assets/speaking.mp4 
+audio end 
+stopped 
+stopped 
+stopped 
+stopped 
+stopped 
+stopped 
+stopped 
+stopped 
+stopped 
+stopped 
+stopped 
+stopped 
+stopped 
+stopped 
+stopped 
+space 
+listening thread is started 
+speak 
+User input: can you tell me about the weather in Frankfurt 
+scores: 0.22426607 16 
+offline, default response 
+Answers/0401_response_unicorn.mp3 
+Answers/0401_response_unicorn.mp4 
+audio end 
+stopped 
+space 
+listening thread is started 
+speak 
+User input: what's the weather in Frankfurt 
+scores: 0.15246086 18 
+offline, default response 
+Answers/0401_response_unicorn.mp3 
+Answers/0401_response_unicorn.mp4 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: what's your name 
+scores: 0.8671248 1 
+use predefined question:  What's your name? 
+Answers/0101_response_unicorn.mp3 
+Answers/0101_response_unicorn.mp4 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: what's the weather in Frankfurt 
+scores: 0.15246086 18 
+online, sending request 
+Model response: The weather in Frankfurt today is cloudy with a high of 55 degrees Fahrenheit. There is a 20% chance of rain. 
+response_changed.mp3 
+assets/speaking.mp4 
+audio end 
+stopped 
+space 
+listening thread is started 
+speak 
+User input: can you tell me about networks IQ 
+scores: 0.2951699 28 
+online, sending request 
+Model response: MailboxIQ is an AI-powered application that helps users to analyze and write their emails more efficiently. It has features such as email summaries, sentiment analysis, priority sorting, customizable filters, and language translation. 
+response_changed.mp3 
+assets/speaking.mp4 
+audio end 
+stopped 
+space 
+listening thread is started 
+speak 
+User input: what's the weather in Frankfurt 
+scores: 0.15246086 18 
+online, sending request 
+Model response: The weather in Frankfurt today is cloudy with a high of 55 degrees Fahrenheit. There is a 20% chance of rain. 
+response_changed.mp3 
+assets/speaking.mp4 
+stopped 
+audio end 
+stopped 

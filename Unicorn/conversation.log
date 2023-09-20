@@ -204,3 +204,68 @@ User input: can you tell me about your plugin please
 scores: 0.36708522 14 
 Model response: Our plugin is an Outlook plugin that helps users to analyze and write their emails more efficiently. It can show a sentiment of email, i.e. negative or positive. It can also provide a language tone of email, this should help users to avoid impolite words and avoid using inappropriate language. 
 audio end 
+space 
+listening thread is started 
+speak 
+space 
+listening thread is started 
+speak 
+space 
+listening thread is started 
+speak 
+User input: can you tell me about new books like you 
+scores: 0.264081 11 
+Model response: can with emails Our application is an outlook plugin which helps users to analyze and write their emails more efficiently. It can show a sentiment of email, i.e. negative or positive. This will help users to avoid sending negative emails and try to write more positive emails. 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: can you tell me about mailbox i q f 
+scores: 0.6623771 10 
+use predefined question:  What is MailboxIQ and what does it do? 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: what is the weather in Frankfurt 
+scores: 0.14327775 9 
+Model response: I'm not sure about the weather in Frankfurt. Our application doesn't have a feature to check the weather. 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: what's the weather in Frankfurt 
+scores: 0.15246086 9 
+Model response: I'm not sure about the weather in Frankfurt, but our application can help you analyze your emails more efficiently. It can show a sentiment of email, i.e. negative or positive. This will help you avoid sending negative emails and try to write more positive emails. 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: hello can you tell me about male Boxer q 
+scores: 0.18134473 26 
+Model response: Our application is an outlook plugin which helps users to analyze and write their emails more efficiently. It has the following functions:
+1. It can show a sentiment of email, i.e. negative or positive. This will help users to avoid sending negative emails and try to write more positive emails
+2. It can 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: can you tell me about mailbox IQ 
+scores: 0.66829664 10 
+use predefined question:  What is MailboxIQ and what does it do? 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: just a moment can you please tell me about mailbox IQ 
+scores: 0.6204301 10 
+use predefined question:  What is MailboxIQ and what does it do? 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: hello can you 
+scores: 0.3140363 9 
+Model response: tell me more about the application Our application is an outlook plugin which helps users to analyze and write their emails more efficiently. It has the following functions:
+1. It can show a sentiment of email, i.e. negative or positive. This will help users to avoid sending negative emails and try to write more positive 
+audio end 

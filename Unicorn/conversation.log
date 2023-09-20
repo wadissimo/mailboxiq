@@ -269,3 +269,75 @@ scores: 0.3140363 9
 Model response: tell me more about the application Our application is an outlook plugin which helps users to analyze and write their emails more efficiently. It has the following functions:
 1. It can show a sentiment of email, i.e. negative or positive. This will help users to avoid sending negative emails and try to write more positive 
 audio end 
+space 
+listening thread is started 
+speak 
+User input: what is your name 
+scores: 0.87032557 2 
+use predefined question:  What is your name? 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: what's your name 
+scores: 0.8671248 1 
+use predefined question:  What's your name? 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: I'll be able to translate emails 
+scores: 0.32297474 24 
+space 
+listening thread is started 
+speak 
+User input: can you translate emails 
+scores: 0.36145902 22 
+space 
+listening thread is started 
+speak 
+User input: hi can you translate emails 
+scores: 0.3457728 19 
+Model response: Yes, our application can translate emails to other languages. 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: can you sing a song 
+scores: 0.30787733 14 
+Model response: I am not a singing assistant. I can help you with your emails. 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: what's your name 
+scores: 0.8671248 1 
+use predefined question:  What's your name? 
+space 
+listening thread is started 
+speak 
+User input: hi can you sing a song 
+scores: 0.35615575 14 
+Model response: I am an assistant that helps users understand more about our application. I cannot sing songs. 
+space 
+listening thread is started 
+speak 
+User input: can you sing a song 
+scores: 0.30787733 14 
+Model response: I am not a singing assistant. I can help you with your emails. 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: what's your name 
+scores: 0.8671248 1 
+use predefined question:  What's your name? 
+audio end 
+space 
+listening thread is started 
+speak 
+User input: what's your name 
+scores: 0.8671248 1 
+use predefined question:  What's your name? 
+Answers/0101_response_unicorn.mp3 
+Answers/0101_response_unicorn.mp4 

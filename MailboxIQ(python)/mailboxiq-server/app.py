@@ -2,12 +2,13 @@ from flask import Flask, render_template, request
 
 import traceback
 from palm2_model import Palm2Model
-
+from gpt_model import GptModel
 
 app = Flask(__name__)
 app.secret_key="klnv55asfdasdas$$%21321!!"
 ERROR_RESPONSE_JSON = '{"error":"invalid request"}'
-DEFAULT_MODEL = Palm2Model()
+#DEFAULT_MODEL = Palm2Model()
+DEFAULT_MODEL = GptModel("C:/Users/Vadim/Documents/api-key.txt")
 
 @app.route("/")
 def home():

@@ -8,7 +8,8 @@ app = Flask(__name__)
 app.secret_key="klnv55asfdasdas$$%21321!!"
 ERROR_RESPONSE_JSON = '{"error":"invalid request"}'
 #DEFAULT_MODEL = Palm2Model()
-DEFAULT_MODEL = GptModel("C:/Users/Vadim/Documents/api-key.txt")
+#DEFAULT_MODEL = GptModel("C:/Users/Vadim/Documents/api-key.txt", "gpt-4-1106-preview")
+DEFAULT_MODEL = GptModel("C:/Users/Vadim/Documents/api-key.txt") # "gpt-3.5-turbo" much cheaper
 
 @app.route("/")
 def home():

@@ -1,15 +1,20 @@
 from model import Model
 
 import json
-import openai
+from openai import OpenAI
 
 class GptModel(Model):
 
-    def __init__(self, key_path):
-        self.key_path = key_path
-        self.key = self.get_key(key_path)
+    def __init__(self, key_path, model_name="gpt-3.5-turbo"):
         
-        super().__init__("GPT")
+        #self.key_path = key_path
+        #self.key = 
+        self.model_name=model_name
+        
+        self.client = OpenAI(
+           api_key=self.get_key(key_path)
+        )
+        super().__init__(model_name)
 
     def get_key(self, key_path):
         with open(key_path, 'r') as f:
@@ -18,9 +23,11 @@ class GptModel(Model):
 
 
     def call_gpt(self, prompt):
-        openai.api_key = self.key
-        response = openai.ChatCompletion.create(model="gpt-3.5-turbo", messages=[{"role": "user", "content": prompt}])
-        return response
+        
+        #response = openai.ChatCompletion.create(model=self.model_name, messages=[{"role": "user", "content": prompt}])
+        completion = self.client.chat.completions.create(model=self.model_name, messages=[{"role": "user", "content": prompt}])
+        response_text = completion.choices[0].message.content #response['choices'][0]['message']['content']
+        return response_text
 
 
     def classify_tone_and_sentiment(self, body):
@@ -35,10 +42,10 @@ class GptModel(Model):
 
             input:
             """
-        response = self.call_gpt(prompt + body)
-        response_text = response['choices'][0]['message']['content']
+        response_text = self.call_gpt(prompt + body)
+        
         print(f"Response text from Model(Tone/Sentiment): {response_text}")
-        print(f"Response from Model(Tone/Sentiment): {response}")
+        #print(f"Response from Model(Tone/Sentiment): {response}")
         
 
         sentiment = "positive"
@@ -60,8 +67,8 @@ class GptModel(Model):
         prompt = """Summarize the text:
         input:
         """
-        response = self.call_gpt(prompt + body)
-        response_text = response['choices'][0]['message']['content']
+        response_text = self.call_gpt(prompt + body)
+        
         return json.dumps({
             "text": response_text
         })
@@ -70,15 +77,14 @@ class GptModel(Model):
         prompt = """Rephrase the given input text in polite and positive manner
         input:
         """
-        response = self.call_gpt(prompt + body)
-        response_text = response['choices'][0]['message']['content']
+        response_text = self.call_gpt(prompt + body)
+        
         return json.dumps({
             "text": response_text
         })
 
     def prompt(self, body, prompt):
-        response = self.call_gpt(prompt + "\ninput:\n" + body)
-        response_text = response['choices'][0]['message']['content']
+        response_text = self.call_gpt(prompt + "\ninput:\n" + body)
         return json.dumps({
             "text": response_text
         })
@@ -87,8 +93,8 @@ class GptModel(Model):
         prompt = """Translate the following to German if text is in English or to English if text is in German:
         input:
         """
-        response = self.call_gpt(prompt + body)
-        response_text = response['choices'][0]['message']['content']
+        response_text = self.call_gpt(prompt + body)
+        
         return json.dumps({
             "text": response_text
         })
@@ -102,8 +108,8 @@ class GptModel(Model):
         - Severity: Low
         input:
         """
-        response = self.call_gpt(prompt + body)
-        response_text = response['choices'][0]['message']['content']
+        response_text = self.call_gpt(prompt + body)
+        
         return json.dumps({
             "text": response_text
         })
@@ -116,8 +122,8 @@ class GptModel(Model):
         - Non-fraud
         input:
         """
-        response = self.call_gpt(prompt + body)
-        response_text = response['choices'][0]['message']['content']
+        response_text = self.call_gpt(prompt + body)
+        
         return json.dumps({
             "text": response_text
         })

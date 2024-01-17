@@ -3,13 +3,15 @@ from flask import Flask, render_template, request
 import traceback
 from palm2_model import Palm2Model
 from gpt_model import GptModel
+from gemini_model import GeminiModel
 
 app = Flask(__name__)
 app.secret_key="klnv55asfdasdas$$%21321!!"
 ERROR_RESPONSE_JSON = '{"error":"invalid request"}'
 #DEFAULT_MODEL = Palm2Model()
 #DEFAULT_MODEL = GptModel("C:/Users/Vadim/Documents/api-key.txt", "gpt-4-1106-preview")
-DEFAULT_MODEL = GptModel("C:/Users/Vadim/Documents/api-key.txt") # "gpt-3.5-turbo" much cheaper
+#DEFAULT_MODEL = GptModel("C:/Users/Vadim/Documents/api-key.txt") # "gpt-3.5-turbo" much cheaper
+DEFAULT_MODEL = GeminiModel()
 
 @app.route("/")
 def home():
@@ -78,6 +80,7 @@ def serve_from_body(model_function):
 
 if __name__ == "__main__":
     model = DEFAULT_MODEL
+    print("model", model.model_name)
     #app.run(debug=True, port=5000, ssl_context=('cert.pem', 'key.pem'))
     #app.run('0.0.0.0',debug=True, port=5000, ssl_context=('cert.pem', 'key.pem'))
     app.run('localhost',debug=True, port=5000, ssl_context=('localhost.crt', 'localhost.key'))

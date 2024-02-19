@@ -8,6 +8,7 @@ class Palm2Model(Model):
         super().__init__("Palm2")
 
     def call_palm2(self, prompt):
+        print("call_palm2")
         parameters = {
             "temperature": 0.2,
             "max_output_tokens": 256,   

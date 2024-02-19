@@ -23,7 +23,7 @@ class GptModel(Model):
 
 
     def call_gpt(self, prompt):
-        
+        print("call_gpt")
         #response = openai.ChatCompletion.create(model=self.model_name, messages=[{"role": "user", "content": prompt}])
         completion = self.client.chat.completions.create(model=self.model_name, messages=[{"role": "user", "content": prompt}])
         response_text = completion.choices[0].message.content #response['choices'][0]['message']['content']

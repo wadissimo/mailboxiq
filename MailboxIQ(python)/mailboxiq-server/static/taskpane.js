@@ -22,7 +22,7 @@ Office.onReady(function () {
 	document.getElementById("en_de_translation").onclick = on_click_translate;
 	document.getElementById("severity_classification").onclick = on_click_severity_classification;
 	document.getElementById("fraud_classification").onclick = on_click_fraud_classification;
-	fraud_classification
+	//fraud_classification
 
 	//append_debug("Loaded")
 	//prependItemBody("test prepend")
@@ -207,14 +207,19 @@ function request_body_data(callback){
 }
 
 
+
+
 function SendRequest(service, body, callback_func, params) {
+	
 	var payload = {
-		"body": body
+		"body": body,
+		"model":document.getElementById("model").value
 	};
 	if (typeof params !== 'undefined') {
 		payload = {
 			"body": body,
-			"params":params
+			"params":params,
+			"model":document.getElementById("model").value
 		};
 	}
 

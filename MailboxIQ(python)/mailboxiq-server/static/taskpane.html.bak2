@@ -146,7 +146,7 @@
 			<tr >
 				<td>
 					<button role="button" id="en_de_translation" class="ms-font-s" title="Translate (based on entire email or selection) - blocked by Google">
-						<span class="ms-Button-label">EN<->DE</span>
+						<span class="ms-Button-label">EN<->DE!</span>
 					</button>
 					<!-- <button role="button" id="de_en_translation" class="ms-font-s">
 						<span class="ms-Button-label">DE->EN</span>
@@ -159,6 +159,17 @@
 					<span class="ms-Button-label">Prompt</span>
 				</button>
 					
+				</td>
+			</tr>
+			<tr>
+				<td>Model (for Demo only):</td>
+				<td>
+					<select id="model">
+						<option value="gemini">gemini-pro</option>
+						<option value="gpt4">GPT 4 (Turbo)</option>
+						<option value="gpt35">GPT 3.5 (Turbo)</option>
+						<option value="palm2">Palm 2</option>
+					</select>
 				</td>
 			</tr>
 			<tr>

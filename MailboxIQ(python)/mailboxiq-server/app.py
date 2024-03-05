@@ -4,6 +4,8 @@ import traceback
 from palm2_model import Palm2Model
 from gpt_model import GptModel
 from gemini_model import GeminiModel
+from mistral_model import MistralModel
+from claude_model import ClaudeModel
 
 app = Flask(__name__)
 app.secret_key="klnv55asfdasdas$$%21321!!"
@@ -13,6 +15,8 @@ ERROR_RESPONSE_JSON = '{"error":"invalid request"}'
 #DEFAULT_MODEL = GptModel("C:/Users/Vadim/Documents/api-key.txt") # "gpt-3.5-turbo" much cheaper
 DEFAULT_MODEL = GeminiModel()
 OPENAI_API_KEY_PATH = "C:/Users/Vadim/Documents/api-key.txt"
+MISTRAL_API_KEY_PATH = "C:/Users/Vadim/Documents/mistral-api-key.txt"
+CLAUDE_API_KEY_PATH = "C:/Users/Vadim/Documents/claude-api-key.txt"
 
 @app.route("/")
 def home():
@@ -104,6 +108,13 @@ def choose_model():
         elif "palm" in model_name:
             model_cache[model_name] = Palm2Model()
             return model_cache[model_name]
+        elif "mistral" in model_name:
+            model_cache[model_name] = MistralModel(key_path=MISTRAL_API_KEY_PATH, model_name=model_name)
+            return model_cache[model_name]
+        elif "claude" in model_name:
+            model_cache[model_name] = ClaudeModel(key_path=CLAUDE_API_KEY_PATH, model_name=model_name)
+            return model_cache[model_name]
+            
     return DEFAULT_MODEL
 
 
